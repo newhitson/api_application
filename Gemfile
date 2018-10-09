@@ -45,3 +45,4 @@ gem "bcrypt", "~> 3.1.1"
 
 gem 'simple_token_authentication', '~> 1.0' # see semver.org
 gem 'awesome_print'
+gem "koala", "~>3.0.0"
