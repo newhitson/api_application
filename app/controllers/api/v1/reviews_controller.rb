@@ -26,7 +26,7 @@ class Api::V1::ReviewsController < ApplicationController
   def update
     if correct_user @review.user
       if @review.update review_params
-        json_response "update review Successfully", true, {review: review}, :ok
+        json_response "update review Successfully", true, {review: @review}, :ok
       else
         json_response "Updated review Fail", false, {}, :unproccessable_entity
       end
@@ -38,7 +38,7 @@ class Api::V1::ReviewsController < ApplicationController
   def destroy
     if correct_user @review.user
       if @review.destroy
-        json_response "Delete review Successfully", true, {review: review}, :ok
+        json_response "Delete review Successfully", true, {review: @review}, :ok
       else
         json_response "Delete review Fail", false, {}, :unproccessable_entity
       end
