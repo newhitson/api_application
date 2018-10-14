@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
   include Response
   include Authenticate
-  include SerializableResources
+  include SerializableResource
 end

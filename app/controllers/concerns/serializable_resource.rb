@@ -1,5 +1,5 @@
-module SerializableResources
-  def parse_json object
+module SerializableResource
+  def parse_json(object)
     ActiveModelSerializers::SerializableResource.new(object).as_json
   end
 end
