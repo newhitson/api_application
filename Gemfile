@@ -48,3 +48,4 @@ gem 'awesome_print'
 gem "koala", "~>3.0.0"
 
 gem "faker"
+gem "active_model_serializers", "~> 0.10.0"
